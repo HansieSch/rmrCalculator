@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en-za">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>RMR Calculator</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Calorie Calculator</h1>
+            <p>Calculate Resting Metabolic Rate(RMR)</p>
+        </header>
+        <form onsubmit="calculate(); return false;" name="calorieCalculator">
+            <div class="formField">
+                <label>Weight(kg):</label>
+                <input type="number" step="1" min="0" name="weight" required>
+            </div>
+
+            <div class="formField">
+                <label>Height(cm):</label>
+                <input type="number" step="1" min="0" name="height" required>
+            </div>
+
+            <div class="formField">
+                <label>Age:</label>
+                <input type="number" step="1" min="0" name="age" required>
+            </div>
+
+            <div class="formField">
+                <label>Activity Level:</label>
+                <select name="activityLevel">
+                    <option value="1.2">sedentary (little or no exercise)</option>
+                    <option value="1.375">lightly active (exercise 1-3 days/week)</option>
+                    <option value="1.55">moderately active (exercise 3-5 days/week)</option>
+                    <option value="1.725">very active (exercise 6-7 days a week)</option>
+                    <option value="1.9">extra active (exercise and physical job)</option>
+                </select>
+            </div>
+
+            <div class="formField">
+                <label>Sex:</label>
+                <select name="sex">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+
+            <div class="formField">
+                <button type="submit">Calculate</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+
+        <div class="details">
+            <h2>Details</h2>
+            <div class="field">
+                <span>Your RMR is (Daily calorie expenditure):</span>
+                <span class="rmr">0</span>
+            </div>
+            <div class="field">
+                <span>Calories to lose 1kg per week:</span>
+                <span class="rmrToLose1kg">0</span>
+            </div>
+            <div class="field">
+                <span>Calories to lose 0.5kg per week:</span>
+                <span class="rmrToLoseHalfkg">0</span>
+            </div>
+            <div class="field">
+                <span>Calories to gain 1kg per week:</span>
+                <span class="rmrToGain1kg">0</span>
+            </div>
+            <div class="field">
+                <span>Calories to gain 0.5kg per week:</span>
+                <span class="rmrToGainHalfkg">0</span>
+            </div>
+        </div>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>

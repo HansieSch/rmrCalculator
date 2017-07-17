@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 13px;
+    font-family: Verdana;
+}
+
+body {
+    padding: 13px 21px;
+}
+
+/********************
+    Header Styles
+********************/
+
+header {
+    width: 100%;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 34px;
+    margin-bottom: 0.25em;
+}
+
+header p {
+    font-size: 21px;
+}
+
+/********************
+    Form Styles
+********************/
+
+form {
+    width: 50%;
+    padding: 32px 0;
+    width: 344px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.formField {
+    display: block;
+    overflow: auto;
+    line-height: 32px;
+}
+
+.formField:last-of-type {
+    padding-top: 13px;
+}
+
+.formField label {
+    float: left;
+    margin-bottom: 4px;
+}
+
+.formField select:hover, .formField select option:hover {
+    cursor: pointer;
+}
+
+.formField input, .formField select {
+    float: right;
+    margin-bottom: 8px;
+    padding: 6px 11px;
+    text-align: right;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.formField input:hover, .formField select:hover {
+    box-shadow: 0px 3px 10px -5px black;
+}
+
+.formField input {
+    padding: 7px 11px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(200, 200, 200);
+}
+
+.formField input:hover {
+}
+
+/*************************
+    Details' Styles
+*************************/
+
+.details {
+    width: 70%;
+    width: 360px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.details h2 {
+    font-size: 21px;
+    margin-bottom: 8px;
+}
+
+.details .field {
+    width: 100%;
+    overflow: auto;
+    padding: 2px 4px;
+}
+
+.details .field span:nth-of-type(1) {
+    float: left;
+}
+
+.details .field span:nth-of-type(2) {
+    font-weight: 700;
+    float: right;
+}
+
+/********************
+    Button Styles
+********************/
+
+button {
+    border: none;
+    background-color: rgb(55, 55, 55);
+    color: white;
+    cursor: pointer;
+    padding: 8px 13px;
+    float: right;
+    outline: none;
+    display: block;
+    transition: all 0.2s ease-in-out;
+    margin-bottom: 5px;
+}
+
+button[type="submit"] {
+    background-color: hsl(120, 100%, 25%);
+}
+
+button[type="submit"]:hover {
+    background-color: hsl(120, 100%, 19%);
+    box-shadow: 0px 3px 10px -5px black;
+}
+
+button[type="submit"]:active {
+    background-color: hsl(120, 100%, 13%);
+}
+
+button[type="reset"] {
+    margin-right: 8px;
+    background-color: transparent;
+    color: rgb(55, 55, 55);
+}
+
+button[type="reset"]:hover {
+    color: white;
+    background-color: rgb(55, 55, 55);
+}
